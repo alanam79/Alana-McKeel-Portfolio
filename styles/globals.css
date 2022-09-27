@@ -5,7 +5,7 @@
 /* this is adding global styling via tailwind */
 @layer base {
   body {
-    @apply bg-[#c1daee] text-[#1f2937] tracking-wide
+    @apply bg-[#d0dfec] text-[#1f2937] tracking-wide
     /* tracking wide spaces out the letters */
     /* bg is the global background color */;
   }
