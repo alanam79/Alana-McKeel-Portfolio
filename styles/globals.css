@@ -1,26 +1,39 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* this is adding global styling via tailwind */
+@layer base {
   body {
-    color: white;
-    background: black;
+    @apply bg-[#c1daee] text-[#1f2937] tracking-wide
+    /* tracking wide spaces out the letters */
+    /* bg is the global background color */;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h6 {
+    @apply font-bold;
+    /* tailwind these look like p tags, so you can tailor them anyway you want */
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+    /* tailwind is a mobile first app, it starts at the minimum width and what you apply as it goes larger is applied accordingly. Above is our media query, this is for h1 only */;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
 }
