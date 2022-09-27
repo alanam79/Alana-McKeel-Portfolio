@@ -4,6 +4,7 @@ import React from "react";
 import socialNetworkImg from "../public/assets/projects/social-network-api.jpg";
 import pawedCasterImg from "../public/assets/projects/group-project.png";
 import netflixImg from "../public/assets/projects/netflix.jpg";
+import budgetImg from "../public/assets/projects/budget.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -32,9 +33,9 @@ const Projects = () => {
             projectUrl="/netflix"
           />
           <ProjectItem
-            title="Social Network API"
-            backgroundImg={socialNetworkImg}
-            projectUrl="/socialNetwork"
+            title="Budget Tracker"
+            backgroundImg={budgetImg}
+            projectUrl="/Budget Tracker"
           />
         </div>
       </div>
