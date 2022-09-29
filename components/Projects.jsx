@@ -35,7 +35,7 @@ const Projects = () => {
           <ProjectItem
             title="Budget Tracker"
             backgroundImg={budgetImg}
-            projectUrl="/Budget Tracker"
+            projectUrl="/budgetTracker"
           />
         </div>
       </div>

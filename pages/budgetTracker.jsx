@@ -1,10 +1,10 @@
 import Image from "next/image";
-import socialNetworkImg from "../public/assets/projects/social-network-api.jpg";
+import budgetImg from "../public/assets/projects/budget.png";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const socialNetwork = () => {
+const budgetTracker = () => {
   return (
     <div className="w-full">
       {/* top banner */}
@@ -14,11 +14,11 @@ const socialNetwork = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={socialNetworkImg}
+          src={budgetImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2]">
-          <h2 className="py-2">Social Network API</h2>
+          <h2 className="py-2">Budget Tracker</h2>
           <h3>NoSQL</h3>
         </div>
       </div>
@@ -58,4 +58,4 @@ const socialNetwork = () => {
   );
 };
 
-export default socialNetwork;
+export default budgetTracker;

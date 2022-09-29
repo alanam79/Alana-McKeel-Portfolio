@@ -1,10 +1,10 @@
 import Image from "next/image";
-import socialNetworkImg from "../public/assets/projects/social-network-api.jpg";
+import netflixImg from "../public/assets/projects/netflix.jpg";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const socialNetwork = () => {
+const netflix = () => {
   return (
     <div className="w-full">
       {/* top banner */}
@@ -14,12 +14,12 @@ const socialNetwork = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={socialNetworkImg}
+          src={netflixImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2]">
-          <h2 className="py-2">Social Network API</h2>
-          <h3>NoSQL</h3>
+          <h2 className="py-2">Netflix Clone</h2>
+          <h3>React</h3>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ const socialNetwork = () => {
                 <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
+                <RiRadioButtonFill className="pr-1" /> API
               </p>
             </div>
           </div>
@@ -58,4 +58,4 @@ const socialNetwork = () => {
   );
 };
 
-export default socialNetwork;
+export default netflix;
