@@ -19,7 +19,7 @@ const netflix = () => {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2]">
           <h2 className="py-2">Netflix Clone</h2>
-          <h3>React</h3>
+          <h3>React JS | Tailwind | Firebase </h3>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ const netflix = () => {
                 <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> API
+                <RiRadioButtonFill className="pr-1" /> IMDb API
               </p>
             </div>
           </div>
