@@ -15,10 +15,10 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/socialNetwork" ||
-      router.asPath === "/pawedcaster" ||
-      router.asPath === "/netflix" ||
-      router.asPath === "/budgetTracker"
+      window.location.pathname === "/socialNetwork" ||
+      window.location.pathname === "/pawedcaster" ||
+      window.location.pathname === "/netflix" ||
+      window.location.pathname === "/budgetTracker"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -120,6 +120,7 @@ const Navbar = () => {
                   </a>
                 </Link>
                 <div
+                  style={{ color: `${linkColor}` }}
                   /* pulling over image smaller and moving aioutline close to be in flex with image */
                   onClick={handleNav}
                   className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer">
