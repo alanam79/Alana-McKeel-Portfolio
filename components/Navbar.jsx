@@ -11,14 +11,14 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
-  const router = useRouter;
+  const router = useRouter();
 
   useEffect(() => {
     if (
-      window.location.pathname === "/socialNetwork" ||
-      window.location.pathname === "/pawedcaster" ||
-      window.location.pathname === "/netflix" ||
-      window.location.pathname === "/budgetTracker"
+      router.asPath === "/socialNetwork" ||
+      router.asPath === "/pawedcaster" ||
+      router.asPath === "/netflix" ||
+      router.asPath === "/budgetTracker"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -26,7 +26,11 @@ const Navbar = () => {
       setNavBg("ecf0f3");
       setLinkColor("#1f2937");
     }
-  }, [router]);
+  }, [router.asPath]);
+
+  console.log("router", router.asPath);
+  console.log("navBG", navBg);
+  console.log("linkColor", linkColor);
 
   const handleNav = () => {
     setNav(!nav);
