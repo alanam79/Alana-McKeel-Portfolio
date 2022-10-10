@@ -27,12 +27,16 @@ const socialNetwork = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>A back end only API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.</p>
-          <a href='https://github.com/alanam79/Social-Network-API'>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+          <p>
+            A back end only API for a social network web application where users
+            can share their thoughts, react to friends’ thoughts, and create a
+            friend list.
+          </p>
+          <a href="https://github.com/alanam79/Social-Network-API">
+            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href='https://github.com/alanam79/Social-Network-API'>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <a href="https://github.com/alanam79/Social-Network-API">
+            <button className="px-8 py-2 mt-4">Code</button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -40,17 +44,17 @@ const socialNetwork = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> M.E.R.N.
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Insomnia
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> API
+              </p>
+              {/* <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Firebase
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
