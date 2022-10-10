@@ -27,9 +27,22 @@ const pawedcaster = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>Text for project goes here</p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <p>
+            We are a group of software developers with a passion for podcasts
+            and animals. We created this app for users that want to discover a
+            wide variety of pet & animal related podcasts, while also being able
+            to directly support our furry, scaly, and feathery friends.
+            PawedCaster creatively monetizes user traffic and ad space to
+            contribute the proceeds directly to local animal shelters, rescues,
+            and ASPCA chapters. We hope you find what you are looking for while
+            exploring the possibilities.
+          </p>
+          <a href="https://nameless-reef-29126.herokuapp.com/">
+            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+          </a>
+          <a href="https://github.com/alanam79/group-project-3">
+            <button className="px-8 py-2 mt-4">Code</button>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

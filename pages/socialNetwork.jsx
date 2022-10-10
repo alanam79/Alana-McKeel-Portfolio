@@ -27,9 +27,13 @@ const socialNetwork = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>Text for project goes here</p>
+          <p>A back end only API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.</p>
+          <a href='https://github.com/alanam79/Social-Network-API'>
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+          </a>
+          <a href='https://github.com/alanam79/Social-Network-API'>
           <button className="px-8 py-2 mt-4">Code</button>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
