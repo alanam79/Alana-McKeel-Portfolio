@@ -6,6 +6,30 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../public/assets/contact.jpg";
+import emailjs from "emailjs-com";
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_fm49a5y",
+      "template_bjdztmg",
+      e.target,
+      "V90gDFkeCrleWXRDr"
+    )
+    .then((target) => {
+      console.log(target);
+    })
+    .then(
+      (result) => {},
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  e.target.reset();
+  alert("Your message has been sent!");
+}
 
 const Contact = () => {
   return (
@@ -69,13 +93,14 @@ const Contact = () => {
 
           <div className="col-span-3 w-full h-auto shadow-2xl shadow-gray-600 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form onSubmit={sendEmail}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      name="name"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -93,6 +118,7 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    name="email"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -100,17 +126,21 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="test"
+                    name="subject"
                   />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
-                    rows="10"></textarea>
+                    rows="10"
+                    name="message"></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
-                </button>
+                <div>
+                  <button className="w-full p-4 text-gray-100 mt-4">
+                    Send Message
+                  </button>
+                </div>
               </form>
             </div>
           </div>

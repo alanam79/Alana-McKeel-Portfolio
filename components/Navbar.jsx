@@ -28,9 +28,9 @@ const Navbar = () => {
     }
   }, [router.asPath]);
 
-  console.log("router", router.asPath);
-  console.log("navBG", navBg);
-  console.log("linkColor", linkColor);
+  // console.log("router", router.asPath);
+  // console.log("navBG", navBg);
+  // console.log("linkColor", linkColor);
 
   const handleNav = () => {
     setNav(!nav);
