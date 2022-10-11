@@ -14,15 +14,21 @@ const About = () => {
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">Ready to Rock and Code!</p>
           <p className="py-2 text-gray-600">
-            Professionally, I have had prior experience in Business and Hotel
-            management as well as Title and Escrow experience. Currently, I am
-            focused on securing a full-time position as a Full Stack Developer.
+            My name is Alana McKeel, professionally, I have had prior experience
+            in Business and Hotel management as well as Title and Escrow
+            experience. Currently, I am focused on securing a full-time position
+            as a Full Stack Developer.
           </p>
           <p className="py-2 text-gray-600">
             As I have progressed thru the course, I have been drawn to the back
             end and have really enjoyed learning and understanding the
             processes. Thank you for visiting, let's connect!
           </p>
+          <Link href="https://docs.google.com/document/d/1UTvsO2uZk4rzMDuMpkkbIr3HTHx_CJsc/edit?usp=sharing&ouid=104711669634292889827&rtpof=true&sd=true">
+            <p className="py-2 text-gray-600 underline cursor-pointer">
+              Check out my resume!
+            </p>
+          </Link>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Check out some of my latest projects.
