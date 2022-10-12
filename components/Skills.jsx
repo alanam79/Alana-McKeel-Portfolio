@@ -10,7 +10,7 @@ import FirebaseImg from "../public/assets/skills/firebase.png";
 import NodeImg from "../public/assets/skills/node.png";
 import GithubImg from "../public/assets/skills/github1.png";
 import NextImg from "../public/assets/skills/nextjs.png";
-import SqlImg from "../public/assets/skills/sql.jpg";
+import SqlImg from "../public/assets/skills/sql.jpeg";
 import GraphqlImg from "../public/assets/skills/graphQL.png";
 
 const Skills = () => {
