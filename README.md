@@ -18,7 +18,7 @@
 
 
   # Website
-  https://feature-refactor.d2znyvxpukrl3a.amplifyapp.com/
+  https://main.d2znyvxpukrl3a.amplifyapp.com/
 
   ## Screenshots
   [![1.jpg](https://i.postimg.cc/kXTJWvQ4/1.jpg)](https://postimg.cc/qzCHTnZV)
