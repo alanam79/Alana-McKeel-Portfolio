@@ -38,11 +38,11 @@ const Projects = () => {
             backgroundImg={budgetImg}
             projectUrl="/budgetTracker"
           />
-          <ProjectItem
+          {/* <ProjectItem
             title="AWS for JavaScript Developers"
             backgroundImg={awsImg}
             projectUrl="/aws"
-          />
+          /> */}
         </div>
       </div>
     </div>
