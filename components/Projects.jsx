@@ -6,10 +6,11 @@ import pawedCasterImg from "../public/assets/projects/group-project.png";
 import netflixImg from "../public/assets/projects/netflix.jpg";
 import budgetImg from "../public/assets/projects/budget.png";
 import ProjectItem from "./ProjectItem";
+import awsImg from "../public/assets/projects/aws.png";
 
 const Projects = () => {
   return (
-    <div id='projects' className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
@@ -36,6 +37,11 @@ const Projects = () => {
             title="Budget Tracker"
             backgroundImg={budgetImg}
             projectUrl="/budgetTracker"
+          />
+          <ProjectItem
+            title="AWS for JavaScript Developers"
+            backgroundImg={awsImg}
+            projectUrl="/aws"
           />
         </div>
       </div>
